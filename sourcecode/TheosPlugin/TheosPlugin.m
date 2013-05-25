@@ -93,7 +93,7 @@
         folder=[folder stringByReplacingOccurrencesOfString:@" " withString:@"\\\\ "];
         folder=[folder stringByReplacingOccurrencesOfString:@"Tweak.xm" withString:@""];
 
-        NSString *script=[NSString stringWithFormat:@"cd %@; rm -r *.deb; make package install;",folder];
+        NSString *script=[NSString stringWithFormat:@"cd %@; clear; clear; rm -r *.deb; make package install;",folder];
         
         NSString *s = [NSString stringWithFormat:@"tell application \"Terminal\"\n"
                        "if window 1 exists then\n"
