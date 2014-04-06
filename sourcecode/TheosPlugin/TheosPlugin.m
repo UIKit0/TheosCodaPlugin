@@ -91,7 +91,7 @@
         folder = [folder substringWithRange:range];
         
         folder=[folder stringByReplacingOccurrencesOfString:@" " withString:@"\\\\ "];
-        folder=[folder stringByReplacingOccurrencesOfString:@"Tweak.xm" withString:@""];
+        folder=[folder stringByDeletingLastPathComponent];
 
         NSString *script=[NSString stringWithFormat:@"cd %@; clear; clear; rm -r *.deb; make package install;",folder];
         
