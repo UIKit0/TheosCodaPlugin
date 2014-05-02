@@ -6,6 +6,7 @@
         <extension>mm</extension>
         <extension>pch</extension>
         <extension>xm</extension>
+        <extension>xmi</extension>
         <extension>x</extension>
     </recognition>
 </settings>
